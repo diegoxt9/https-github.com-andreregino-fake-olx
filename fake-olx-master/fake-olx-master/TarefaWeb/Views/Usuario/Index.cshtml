@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table table-striped">
+    @foreach (var u in Model)
+    {
+    <tr>
+        <td>@u.UsuarioId</td>
+        <td>@u.Nome</td>
+        <td>@u.Email</td>
+        <td>@u.Senha</td>
+        <td>@u.Receita</td>
+        
+    </tr>
+    }
+</table>
+<a href="/Usuario/Create">Adicionar</a>
+
